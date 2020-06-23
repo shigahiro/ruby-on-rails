@@ -81,3 +81,51 @@ Migrating to CreateLists (20200622085957)
   [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/top" for 127.0.0.1 at 2020-06-22 18:49:30 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 12654)
+
+
+Started GET "/todolists/new" for 127.0.0.1 at 2020-06-23 07:41:21 +0900
+  
+Errno::ENOENT (No such file or directory - todolists):
+  
+config/routes.rb:6:in ``'
+config/routes.rb:6:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/todolists/new" for 127.0.0.1 at 2020-06-23 07:43:11 +0900
+  
+Errno::ENOENT (No such file or directory - todolists):
+  
+config/routes.rb:6:in ``'
+config/routes.rb:6:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/__web_console/repl_sessions/8de8d0604cb30e60bf71c1552be1a459/trace" for 127.0.0.1 at 2020-06-23 07:43:17 +0900
+Started POST "/__web_console/repl_sessions/8de8d0604cb30e60bf71c1552be1a459/trace" for 127.0.0.1 at 2020-06-23 07:44:09 +0900
+Started POST "/__web_console/repl_sessions/8de8d0604cb30e60bf71c1552be1a459/trace" for 127.0.0.1 at 2020-06-23 07:44:13 +0900
+Started POST "/__web_console/repl_sessions/8de8d0604cb30e60bf71c1552be1a459/trace" for 127.0.0.1 at 2020-06-23 07:44:15 +0900
+Started GET "/todolists/new" for 127.0.0.1 at 2020-06-23 07:45:09 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 30.4ms | ActiveRecord: 0.9ms | Allocations: 9034)
+
+
+Started GET "/todolists/new" for 127.0.0.1 at 2020-06-23 18:47:06 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 84.6ms | ActiveRecord: 0.9ms | Allocations: 15572)
+
+
